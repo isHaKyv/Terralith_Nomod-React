@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.logo-image {
+    width: 200px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#register-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#register-button:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333333;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+    border-radius: 10px;
+}
+
+.percent {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.water_wave {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+    animation: wave 5s linear infinite;
+}
+
+.water_wave_back {
+    fill: rgba(0, 150, 255, 0.3);
+    z-index: 1;
+    animation-delay: 0s;
+}
+
+.water_wave_front {
+    fill: rgba(0, 150, 255, 0.6);
+    z-index: 2;
+    animation-delay: -2s;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

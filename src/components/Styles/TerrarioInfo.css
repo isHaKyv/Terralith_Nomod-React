@@ -1,0 +1,119 @@
+/* src/Styles/TerrarioInfo.css */
+
+.container {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .terrario-list {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5; 
+    overflow-y: auto; 
+  }
+  
+  .header {
+    color: #333; 
+  }
+  
+  #terrario-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .terrario-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333; 
+  }
+  
+  .floating-add-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .floating-add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .info-panel {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    color: #333; 
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #333; 
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #terrario-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #terrario-form label {
+    margin-bottom: 5px;
+    color: #333; 
+  }
+  
+  #terrario-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333; 
+  }
+  
